@@ -1,0 +1,62 @@
+@import "components/_reset";
+@import "components/_ui";
+@import "scss/components/libs/animation.css";
+@import "pages/main-page_style";
+
+
+// hover
+
+header>.container>nav>.list>li:hover{
+    transition: .3s ease-in-out;
+    opacity: .6;
+    cursor: pointer;
+}
+header>.container>.button-wrapper>button:first-child:hover{
+    background: transparent;
+    color:black;
+    &::before{
+        content: "";
+        background-color: black;
+    }
+}
+
+button.btn-ui-1:hover{
+    background: linear-gradient(264.18deg, #ffffff 42.69%, #151515 90.8%) !important;
+    transition: .3s ease-in-out;
+}
+
+button.btn-ui-1.btn-outline:hover{
+    transition: .3s ease-in-out;
+    background: black !important;
+    color: white;
+}
+button.btn-ui-1.btn-outline-white:hover{
+    transition: .3s ease-in-out;
+    background: white !important;
+    color: black;
+}
+main.main-page>.section__what>.container>.left>button.green::before{
+    background: transparent;
+}
+main.main-page>.section__what>.container>.left>button.green:hover{
+    background: #5c6c1c !important;
+}
+
+main.main-page > .section__what > .wrapper-video > button:hover{
+    & circle{
+        transition: .3s ease-in-out;
+        fill: url(#paint0_linear_150_1165);
+    }
+    & defs{
+        transition: .3s ease-in-out;
+    }
+}
+
+
+main.main-page>.section__cases>.container>.container-cases>.wrapper>button:hover{
+    & path{
+        fill: #89a322;
+    }
+}
+
+// hoverend
